@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration>
+  <driver id="modbus">
+    <samplingTimeout>0</samplingTimeout>
+    <connectRetryInterval>1m</connectRetryInterval>
+    <disabled>false</disabled>
+    <device id="REF">
+      <description>ref for testing</description>
+      <address>192.168.50.243:502</address>
+      <settings>TCP</settings>
+      <disabled>false</disabled>
+      <channel id="phaseA_I_ref">
+        <address>255:INPUT_REGISTERS:138:DOUBLE</address>
+        <valueType>DOUBLE</valueType>
+        <samplingInterval>1s</samplingInterval>
+        <disabled>false</disabled>
+      </channel>
+      <channel id="phaseB_I_ref">
+        <address>255:INPUT_REGISTERS:139:DOUBLE</address>
+        <valueType>DOUBLE</valueType>
+        <samplingInterval>1s</samplingInterval>
+        <disabled>false</disabled>
+      </channel>
+      <channel id="phaseC_I_ref">
+        <address>255:INPUT_REGISTERS:140:DOUBLE</address>
+        <valueType>DOUBLE</valueType>
+        <samplingInterval>1s</samplingInterval>
+        <disabled>false</disabled>
+      </channel>
+      <channel id="phaseA_U_ref">
+        <address>255:INPUT_REGISTERS:152:DOUBLE</address>
+        <valueType>DOUBLE</valueType>
+        <samplingInterval>1s</samplingInterval>
+        <disabled>false</disabled>
+      </channel>
+      <channel id="phaseB_U_ref">
+        <address>255:INPUT_REGISTERS:153:DOUBLE</address>
+        <valueType>DOUBLE</valueType>
+        <samplingInterval>1s</samplingInterval>
+        <disabled>false</disabled>
+      </channel>
+      <channel id="phaseC_U_ref">
+        <address>255:INPUT_REGISTERS:154:DOUBLE</address>
+        <valueType>DOUBLE</valueType>
+        <samplingInterval>1s</samplingInterval>
+        <disabled>false</disabled>
+      </channel>
+      <channel id="DevInfoTest">
+        <address>255:HOLDING_REGISTERS:1:BYTEARRAY[12]</address>
+        <valueType length="12">BYTE_ARRAY</valueType>
+        <samplingInterval>1s</samplingInterval>
+        <disabled>false</disabled>
+      </channel>
+    </device>
+    <device id="mega_modbus">
+      <description>mega modbus device for testing</description>
+      <address>192.168.50.162:502</address>
+      <settings>TCP</settings>
+      <disabled>false</disabled>
+      <channel id="phaseA_I_mdb">
+        <address>255:INPUT_REGISTERS:110:BYTEARRAY[2]</address>
+        <valueType length="2">BYTE_ARRAY</valueType>
+        <samplingInterval>1s</samplingInterval>
+        <disabled>false</disabled>
+      </channel>
+      <channel id="phaseB_I_mdb">
+        <address>255:INPUT_REGISTERS:122:BYTEARRAY[2]</address>
+        <valueType length="2">BYTE_ARRAY</valueType>
+        <samplingInterval>1s</samplingInterval>
+        <disabled>false</disabled>
+      </channel>
+      <channel id="phaseC_I_mdb">
+        <address>255:INPUT_REGISTERS:134:BYTEARRAY[2]</address>
+        <valueType length="2">BYTE_ARRAY</valueType>
+        <samplingInterval>1s</samplingInterval>
+        <disabled>false</disabled>
+      </channel>
+      <channel id="phaseA_U_mdb">
+        <address>255:INPUT_REGISTERS:108:BYTEARRAY[2]</address>
+        <valueType length="2">BYTE_ARRAY</valueType>
+        <samplingInterval>1s</samplingInterval>
+        <disabled>false</disabled>
+      </channel>
+      <channel id="phaseB_U_mdb">
+        <address>255:INPUT_REGISTERS:120:BYTEARRAY[2]</address>
+        <valueType length="2">BYTE_ARRAY</valueType>
+        <samplingInterval>1s</samplingInterval>
+        <disabled>false</disabled>
+      </channel>
+      <channel id="phaseC_U_mdb">
+        <address>255:INPUT_REGISTERS:132:BYTEARRAY[2]</address>
+        <valueType length="2">BYTE_ARRAY</valueType>
+        <samplingInterval>1s</samplingInterval>
+        <disabled>false</disabled>
+      </channel>
+    </device>
+  </driver>
+  <driver id="iec60870">
+    <samplingTimeout>0</samplingTimeout>
+    <connectRetryInterval>10s</connectRetryInterval>
+    <disabled>false</disabled>
+    <device id="60870_REC">
+      <description>test0</description>
+      <address>h=192.168.50.244;p=2404</address>
+      <settings>cfl=1;ifl=2;cafl=1</settings>
+      <disabled>false</disabled>
+      <channel id="I1_A_REC">
+        <description>second</description>
+        <address>ca=0;t=9;ioa=40010</address>
+        <valueType>FLOAT</valueType>
+        <listening>true</listening>
+        <disabled>false</disabled>
+      </channel>
+      <channel id="phaseA_U1_REC">
+        <description>second</description>
+        <address>ca=0;t=13;ioa=8000</address>
+        <valueType>FLOAT</valueType>
+        <listening>true</listening>
+        <disabled>false</disabled>
+      </channel>
+      <channel id="phaseB_U1_REC">
+        <description>second</description>
+        <address>ca=0;t=13;ioa=8001</address>
+        <valueType>FLOAT</valueType>
+        <listening>true</listening>
+        <disabled>false</disabled>
+      </channel>
+      <channel id="phaseC_U1_REC">
+        <description>second</description>
+        <address>ca=0;t=13;ioa=8002</address>
+        <valueType>FLOAT</valueType>
+        <listening>true</listening>
+        <disabled>false</disabled>
+      </channel>
+      <channel id="Tot_P_REC">
+        <description>Total active power P</description>
+        <address>ca=0;t=13;ioa=8033</address>
+        <valueType>FLOAT</valueType>
+        <listening>true</listening>
+        <disabled>false</disabled>
+      </channel>
+      <channel id="Tot_Q_REC">
+        <description>Total active power Q</description>
+        <address>ca=0;t=13;ioa=8035</address>
+        <valueType>FLOAT</valueType>
+        <listening>true</listening>
+        <disabled>false</disabled>
+      </channel>
+      <channel id="voltA_U1_REC">
+        <description>second</description>
+        <address>ca=0;t=13;ioa=8047</address>
+        <valueType>FLOAT</valueType>
+        <listening>true</listening>
+        <disabled>false</disabled>
+      </channel>
+      <channel id="voltB_U1_REC">
+        <description>second</description>
+        <address>ca=0;t=13;ioa=8048</address>
+        <valueType>FLOAT</valueType>
+        <listening>true</listening>
+        <disabled>false</disabled>
+      </channel>
+      <channel id="voltC_U1_REC">
+        <description>second</description>
+        <address>ca=0;t=13;ioa=8049</address>
+        <valueType>FLOAT</valueType>
+        <listening>true</listening>
+        <disabled>false</disabled>
+      </channel>
+      <channel id="phaseA_U1_REC_r">
+        <description>second</description>
+        <address>ca=0;t=13;ioa=8000</address>
+        <valueType>FLOAT</valueType>
+        <listening>false</listening>
+        <samplingInterval>1s</samplingInterval>
+        <disabled>false</disabled>
+      </channel>
+      <channel id="phaseB_U1_REC_r">
+        <description>second</description>
+        <address>ca=0;t=13;ioa=8001</address>
+        <valueType>FLOAT</valueType>
+        <listening>false</listening>
+        <samplingInterval>1s</samplingInterval>
+        <disabled>false</disabled>
+      </channel>
+      <channel id="phaseC_U1_REC_r">
+        <description>second</description>
+        <address>ca=0;t=13;ioa=8002</address>
+        <valueType>FLOAT</valueType>
+        <listening>false</listening>
+        <samplingInterval>1s</samplingInterval>
+        <disabled>false</disabled>
+      </channel>
+      <channel id="Tot_P_REC_r">
+        <description>Total active power P</description>
+        <address>ca=0;t=13;ioa=8033</address>
+        <valueType>FLOAT</valueType>
+        <listening>false</listening>
+        <samplingInterval>1s</samplingInterval>
+        <disabled>false</disabled>
+      </channel>
+      <channel id="Tot_Q_REC_r">
+        <description>Total active power Q</description>
+        <address>ca=0;t=13;ioa=8035</address>
+        <valueType>FLOAT</valueType>
+        <listening>false</listening>
+        <samplingInterval>1s</samplingInterval>
+        <disabled>false</disabled>
+      </channel>
+      <channel id="voltA_U1_REC_r">
+        <description>second</description>
+        <address>ca=0;t=13;ioa=8047</address>
+        <valueType>FLOAT</valueType>
+        <listening>false</listening>
+        <samplingInterval>1s</samplingInterval>
+        <disabled>false</disabled>
+      </channel>
+      <channel id="voltB_U1_REC_r">
+        <description>second</description>
+        <address>ca=0;t=13;ioa=8048</address>
+        <valueType>FLOAT</valueType>
+        <listening>false</listening>
+        <samplingInterval>1s</samplingInterval>
+        <disabled>false</disabled>
+      </channel>
+      <channel id="voltC_U1_REC_r">
+        <description>second</description>
+        <address>ca=0;t=13;ioa=8049</address>
+        <valueType>FLOAT</valueType>
+        <listening>false</listening>
+        <samplingInterval>1s</samplingInterval>
+        <disabled>false</disabled>
+      </channel>
+    </device>
+    <device id="60870_mega_161">
+      <description>test</description>
+      <address>h=192.168.50.161;p=2404</address>
+      <disabled>false</disabled>
+      <channel id="161_u1">
+        <description>second</description>
+        <address>ca=66;t=36;ioa=2</address>
+        <valueType>FLOAT</valueType>
+        <listening>false</listening>
+        <samplingInterval>1s</samplingInterval>
+        <disabled>false</disabled>
+      </channel>
+      <channel id="161_u2">
+        <description>second</description>
+        <address>ca=66;t=36;ioa=3</address>
+        <valueType>FLOAT</valueType>
+        <listening>false</listening>
+        <samplingInterval>1s</samplingInterval>
+        <disabled>false</disabled>
+      </channel>
+      <channel id="161_u3">
+        <description>second</description>
+        <address>ca=66;t=36;ioa=4</address>
+        <valueType>FLOAT</valueType>
+        <listening>false</listening>
+        <samplingInterval>1s</samplingInterval>
+        <disabled>false</disabled>
+      </channel>
+      <channel id="161_i1">
+        <description>second</description>
+        <address>ca=66;t=36;ioa=6</address>
+        <valueType>FLOAT</valueType>
+        <listening>false</listening>
+        <samplingInterval>1s</samplingInterval>
+        <disabled>false</disabled>
+      </channel>
+      <channel id="161_i2">
+        <description>second</description>
+        <address>ca=66;t=36;ioa=7</address>
+        <valueType>FLOAT</valueType>
+        <listening>false</listening>
+        <samplingInterval>1s</samplingInterval>
+        <disabled>false</disabled>
+      </channel>
+      <channel id="161_i3">
+        <description>second</description>
+        <address>ca=66;t=36;ioa=8</address>
+        <valueType>FLOAT</valueType>
+        <listening>false</listening>
+        <samplingInterval>1s</samplingInterval>
+        <disabled>false</disabled>
+      </channel>
+    </device>
+    <device id="60870_mega_162">
+      <description>test2</description>
+      <address>h=192.168.50.162;p=2404</address>
+      <disabled>false</disabled>
+      <channel id="u1">
+        <description>u1</description>
+        <address>ca=60;t=36;ioa=2</address>
+        <valueType>FLOAT</valueType>
+        <listening>false</listening>
+        <samplingInterval>1s</samplingInterval>
+        <disabled>false</disabled>
+      </channel>
+      <channel id="u2">
+        <description>u2</description>
+        <address>ca=60;t=36;ioa=3</address>
+        <valueType>FLOAT</valueType>
+        <listening>false</listening>
+        <samplingInterval>1s</samplingInterval>
+        <disabled>false</disabled>
+      </channel>
+      <channel id="u3">
+        <description>u3</description>
+        <address>ca=60;t=36;ioa=4</address>
+        <valueType>FLOAT</valueType>
+        <listening>false</listening>
+        <samplingInterval>1s</samplingInterval>
+        <disabled>false</disabled>
+      </channel>
+      <channel id="i1">
+        <description>i1</description>
+        <address>ca=60;t=36;ioa=6</address>
+        <valueType>FLOAT</valueType>
+        <listening>false</listening>
+        <samplingInterval>1s</samplingInterval>
+        <disabled>false</disabled>
+      </channel>
+      <channel id="i2">
+        <description>i2</description>
+        <address>ca=60;t=36;ioa=7</address>
+        <valueType>FLOAT</valueType>
+        <listening>false</listening>
+        <samplingInterval>1s</samplingInterval>
+        <disabled>false</disabled>
+      </channel>
+      <channel id="i3">
+        <description>i3</description>
+        <address>ca=60;t=36;ioa=8</address>
+        <valueType>FLOAT</valueType>
+        <listening>false</listening>
+        <samplingInterval>1s</samplingInterval>
+        <disabled>false</disabled>
+      </channel>
+    </device>
+  </driver>
+</configuration>
