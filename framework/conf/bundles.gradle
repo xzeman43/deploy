@@ -30,10 +30,10 @@ dependencies {
     osgibundles group: "org.openmuc.framework", name: "openmuc-webui-dataplotter",             version: cfgVersion
     osgibundles group: "org.openmuc.framework", name: "openmuc-webui-mediaviewer",             version: cfgVersion
 //    osgibundles group: "org.openmuc.framework", name: "openmuc-webui-simpledemovisualisation", version: cfgVersion
-//    osgibundles group: "org.openmuc.framework", name: "openmuc-webui-loop",                    version: cfgVersion
-//    osgibundles group: "org.openmuc.framework", name: "openmuc-webui-brewery",                 version: cfgVersion
-//    osgibundles group: "org.openmuc.framework", name: "openmuc-webui-energymap",               version: cfgVersion
-//    osgibundles group: "org.openmuc.framework", name: "openmuc-webui-wastewater",              version: cfgVersion
+    osgibundles group: "org.openmuc.framework", name: "openmuc-webui-loop",                    version: cfgVersion
+    osgibundles group: "org.openmuc.framework", name: "openmuc-webui-brewery",                 version: cfgVersion
+    osgibundles group: "org.openmuc.framework", name: "openmuc-webui-energymap",               version: cfgVersion
+    osgibundles group: "org.openmuc.framework", name: "openmuc-webui-wastewater",              version: cfgVersion
     osgibundles group: "org.openmuc.framework", name: "openmuc-webui-distribution",              version: cfgVersion
 
     osgibundles group: "org.openmuc.framework", name: "openmuc-lib-amqp",                      version: cfgVersion
@@ -49,14 +49,14 @@ dependencies {
     osgibundles group: "org.openmuc.framework", name: "openmuc-server-restws",                 version: cfgVersion
 
     osgibundles group: "org.openmuc.framework", name: "openmuc-driver",                        version: cfgVersion
-//    osgibundles group: "org.openmuc.framework", name: "openmuc-driver-aggregator",             version: cfgVersion
-//    osgibundles group: "org.openmuc.framework", name: "openmuc-driver-amqp",                   version: cfgVersion
-//    osgibundles group: "org.openmuc.framework", name: "openmuc-driver-csv",                    version: cfgVersion
-//    osgibundles group: "org.openmuc.framework", name: "openmuc-driver-s7",                     version: cfgVersion
-//    osgibundles group: "org.openmuc.framework", name: "openmuc-driver-opcua",                  version: cfgVersion
-//    osgibundles group: "org.openmuc.framework", name: "openmuc-driver-dlms",                  version: cfgVersion
-//    osgibundles group: "org.openmuc.framework", name: "openmuc-driver-modbus",                  version: cfgVersion
-//    osgibundles group: "org.openmuc.framework", name: "openmuc-driver-iec61850",                  version: cfgVersion
+    osgibundles group: "org.openmuc.framework", name: "openmuc-driver-aggregator",             version: cfgVersion
+    osgibundles group: "org.openmuc.framework", name: "openmuc-driver-amqp",                   version: cfgVersion
+    osgibundles group: "org.openmuc.framework", name: "openmuc-driver-csv",                    version: cfgVersion
+    osgibundles group: "org.openmuc.framework", name: "openmuc-driver-s7",                     version: cfgVersion
+    osgibundles group: "org.openmuc.framework", name: "openmuc-driver-opcua",                  version: cfgVersion
+    osgibundles group: "org.openmuc.framework", name: "openmuc-driver-dlms",                  version: cfgVersion
+    osgibundles group: "org.openmuc.framework", name: "openmuc-driver-modbus",                  version: cfgVersion
+    osgibundles group: "org.openmuc.framework", name: "openmuc-driver-iec61850",                  version: cfgVersion
     osgibundles group: "org.openmuc.framework", name: "openmuc-driver-iec60870",                  version: cfgVersion
 //    osgibundles group: "org.openmuc.framework", name: "openmuc-driver-profinet",                  version: cfgVersion
 
