@@ -6,19 +6,19 @@
     <disabled>false</disabled>
     <device id="60870_Distr">
       <description>test0</description>
-      <address>h=192.168.244.140;p=2404</address>
+      <address>h=192.168.244.134;p=2404</address>
       <settings>cfl=1;ifl=4;cafl=2</settings>
       <disabled>false</disabled>
       <channel id="CSWI1">
         <description>second</description>
-        <address>ca=65535;t=31;ioa=1006</address>
+        <address>ca=65535;t=31;ioa=1007</address>
         <valueType>FLOAT</valueType>
         <listening>true</listening>
         <disabled>false</disabled>
       </channel>
       <channel id="CSWI2">
         <description>second</description>
-        <address>ca=65535;t=31;ioa=1014</address>
+        <address>ca=65535;t=31;ioa=1015</address>
         <valueType>FLOAT</valueType>
         <listening>true</listening>
         <disabled>false</disabled>
@@ -180,13 +180,13 @@
       </channel>
       <channel id="CSWI1_command">
         <description>Circuit Breaker</description>
-        <address>ca=65535;t=46;ioa=1006</address>
+        <address>ca=65535;t=46;ioa=1007</address>
         <valueType>DOUBLE</valueType>
         <disabled>false</disabled>
       </channel>
       <channel id="CSWI2_command">
         <description>Disconnecter</description>
-        <address>ca=65535;t=46;ioa=1014</address>
+        <address>ca=65535;t=46;ioa=1015</address>
         <valueType>DOUBLE</valueType>
         <disabled>false</disabled>
       </channel>
